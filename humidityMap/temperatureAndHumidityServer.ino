@@ -114,7 +114,7 @@ void loop()
       client.println(dht2.readHumidity());
       client.println(" %</span></td></tr>"); 
       client.println("<div class=\"img-container\">");
-      client.println("<table><tr><img src=\"https://github.com/c4rt0/humidityMap/blob/main/images/Smiley.png\" alt=\"What are you looking at? :D\" width=\"500\" height=\"500\"></tr></table><span class=\"sensor\">");     
+      client.println("<table><tr><img src=\"https://github.com/c4rt0/humidityMap/blob/main/images/Smiley.png?raw=true\" alt=\"What are you looking at? :D\" width=\"500\" height=\"500\"></tr></table><span class=\"sensor\">");     
       client.println("</div>");      
       client.println("</body></html>"); 
       client.stop();
