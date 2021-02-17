@@ -23,10 +23,12 @@ WiFiServer server(80);
 
 String header;
 
-// it wil set the static IP address to 192, 168, 0, 135
+// Set the static IP address to specified:
 IPAddress local_IP(192, 168, 0, 135);
-//it wil set the gateway static IP address to 192, 168, 0,1
+
+//Change below's address to your current router(DHCP) address
 IPAddress gateway(192, 168, 0, 1);
+
 IPAddress subnet(255, 255, 0, 0);
 IPAddress primaryDNS(8, 8, 8, 8); 
 IPAddress secondaryDNS(8, 8, 4, 4);
@@ -112,7 +114,7 @@ void loop()
       client.println(dht2.readHumidity());
       client.println(" %</span></td></tr>"); 
       client.println("<div class=\"img-container\">");
-      client.println("<table><tr><img src=\"http://pixelartmaker.com/art/0114196c122ede8.png\" alt=\"What are you looking at? :D\" width=\"500\" height=\"500\"></tr></table><span class=\"sensor\">");     
+      client.println("<table><tr><img src=\"https://github.com/c4rt0/humidityMap/blob/main/images/Smiley.png\" alt=\"What are you looking at? :D\" width=\"500\" height=\"500\"></tr></table><span class=\"sensor\">");     
       client.println("</div>");      
       client.println("</body></html>"); 
       client.stop();
